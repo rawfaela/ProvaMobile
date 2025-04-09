@@ -1,12 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
-import 'react-native-gesture-handler';
 import Login from './screens/login';
 import Estoque from './screens/estoque';
 import Fale from './screens/fale';
-import { NavigationContainer } from '@react-navigation/native';
 
 function DrawerNavigation(){
   const Drawer = createDrawerNavigator();

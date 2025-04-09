@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     text: {
         color: 'rgb(255, 255, 255)',
         fontSize: 30,
+        margin: 'auto',
     },
     imgs:{
         flex: 1,
