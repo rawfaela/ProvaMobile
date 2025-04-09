@@ -5,14 +5,16 @@ import { createStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import Login from './screens/login';
 import Estoque from './screens/estoque';
+import Fale from './screens/fale';
 import { NavigationContainer } from '@react-navigation/native';
 
 function DrawerNavigation(){
   const Drawer = createDrawerNavigator();
-
-  <Drawer.Navigator>
-    <Drawer.Screen name='Estoque' component={Estoque}></Drawer.Screen>
-  </Drawer.Navigator>
+  return(
+    <Drawer.Navigator>
+      <Drawer.Screen name='Estoque' component={Estoque}></Drawer.Screen>
+    </Drawer.Navigator>
+  )
 }
 
 export default function App() {
@@ -21,7 +23,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator headerShown={false}>
-        <Stack.Screen name='Login' component={Estoque} ></Stack.Screen>
+        <Stack.Screen name='Login' component={Fale} ></Stack.Screen>
         <Stack.Screen name='DrawerNavigation' component={DrawerNavigation}></Stack.Screen>
         
       </Stack.Navigator>

@@ -1,8 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, Image } from 'react-native';
 
 function Maca(){
     const [Maca, setMaca] = useState(0);
+}
+
+function Mais(){
+    setMaca+=1;
 }
 
 export default function Estoque(){
@@ -12,9 +17,8 @@ export default function Estoque(){
         <View style={styles.imgs}>
             <Image source={{uri:'https://th.bing.com/th/id/OIP.PNPapONav1ccu2JUJCIdYgHaHn?rs=1&pid=ImgDetMain'}} style={styles.img}/>
             <Text style={styles.nome}>
-                Maçã <br/> Alimento saudável, fruta, vermelho.
+                Maçã <br/> Alimento saudável, fruta, vermelho. 
             </Text>
-            {Maca}
         </View>
 
     </View>

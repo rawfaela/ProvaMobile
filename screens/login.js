@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-native';
 
-export default function Login(navigation){
+export default function Login({navigation}){
     return (
     <View style={styles.container}>
         <Text style={styles.text}>Login</Text>
