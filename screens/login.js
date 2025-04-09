@@ -9,7 +9,7 @@ export default function Login({navigation}){
             <TextInput placeholder='Email' style={styles.input}></TextInput>
             <TextInput placeholder='Senha' style={styles.input}></TextInput>
         </View>
-        <TouchableOpacity style={styles.button}  onPress={()=> navigation.navigate('Estoque')}>
+        <TouchableOpacity style={styles.button}  onPress={()=> navigation.navigate('DrawerNavigation')}>
             <Text style={styles.buttontext} >Entrar</Text>
         </TouchableOpacity>
     </View>

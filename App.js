@@ -13,6 +13,7 @@ function DrawerNavigation(){
   return(
     <Drawer.Navigator>
       <Drawer.Screen name='Estoque' component={Estoque}></Drawer.Screen>
+      <Drawer.Screen name='Fale Conosco' component={Fale}></Drawer.Screen>
     </Drawer.Navigator>
   )
 }
@@ -22,8 +23,8 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator headerShown={false}>
-        <Stack.Screen name='Login' component={Fale} ></Stack.Screen>
+      <Stack.Navigator screenOptions={{headerShown:false}}>
+        <Stack.Screen name='Login' component={Login} ></Stack.Screen>
         <Stack.Screen name='DrawerNavigation' component={DrawerNavigation}></Stack.Screen>
         
       </Stack.Navigator>
